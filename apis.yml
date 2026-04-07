@@ -9,8 +9,7 @@ type: Index
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-tags:
-  - API
+tags: []
 created: '2025-02-06'
 modified: '2026-03-16'
 url: >-
@@ -25,8 +24,7 @@ apis:
       in JSON, YAML and RDF/XML formats. Theres also an earlier, now deprecated JSON
       API which is preserved for backward compatibility.
     humanURL: ' https://openlibrary.org/developers/api'
-    tags:
-      - API
+    tags: []
     properties:
       - type: Documentation
         url: ' https://openlibrary.org/developers/api'
