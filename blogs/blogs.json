@@ -1,0 +1,13 @@
+{
+  "repo": "open-library",
+  "feeds": [
+    {
+      "source": "https://blog.openlibrary.org/",
+      "feed_url": "https://blog.openlibrary.org/feed/",
+      "saved": 10,
+      "title": "The Open Library Blog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:32:57Z"
+}
