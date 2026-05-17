@@ -178,13 +178,13 @@ common:
     url: https://openlibrary.org/developers/api
   - type: Bulk Data Dumps
     url: https://openlibrary.org/developers/dumps
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/internetarchive/openlibrary
   - type: Issues
     url: https://github.com/internetarchive/openlibrary/issues
   - type: Blog
     url: https://blog.openlibrary.org/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://archive.org/about/terms.php
 maintainers:
   - FN: Kin Lane
