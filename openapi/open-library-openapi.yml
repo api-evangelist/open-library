@@ -1,0 +1,146 @@
+openapi: 3.1.0
+info:
+  title: Open Library API
+  description: |
+    Open Library's public, read-only REST API for searching books, authors,
+    and works, retrieving structured records (works, editions, authors,
+    subjects), fetching cover images, and pulling recent changes. No
+    authentication is required; clients are expected to send a descriptive
+    `User-Agent` header to receive a higher per-second rate limit.
+  version: "1.0.0"
+  contact:
+    name: Open Library Developer Documentation
+    url: https://openlibrary.org/developers/api
+servers:
+  - url: https://openlibrary.org
+    description: Open Library production
+  - url: https://covers.openlibrary.org
+    description: Open Library covers service
+paths:
+  /search.json:
+    get:
+      summary: Search books and works
+      description: Solr-backed search across the Open Library catalog.
+      parameters:
+        - name: q
+          in: query
+          description: Solr query string.
+          schema: { type: string }
+        - name: fields
+          in: query
+          schema: { type: string }
+        - name: sort
+          in: query
+          schema:
+            type: string
+            enum: [new, old, random, key, relevance]
+        - name: lang
+          in: query
+          schema: { type: string }
+        - name: page
+          in: query
+          schema: { type: integer }
+        - name: limit
+          in: query
+          schema: { type: integer }
+        - name: offset
+          in: query
+          schema: { type: integer }
+      responses:
+        '200': { $ref: '#/components/responses/SearchResults' }
+  /search/authors.json:
+    get:
+      summary: Search authors
+      parameters:
+        - name: q
+          in: query
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/SearchResults' }
+  /search/inside:
+    get:
+      summary: Full-text search inside books
+      parameters:
+        - name: q
+          in: query
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/SearchResults' }
+  /works/{workId}.json:
+    get:
+      summary: Get a work
+      parameters:
+        - name: workId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/Record' }
+  /editions/{editionId}.json:
+    get:
+      summary: Get an edition
+      parameters:
+        - name: editionId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/Record' }
+  /authors/{authorId}.json:
+    get:
+      summary: Get an author
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/Record' }
+  /subjects/{subject}.json:
+    get:
+      summary: List works for a subject
+      parameters:
+        - name: subject
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/Record' }
+  /lists/{listId}.json:
+    get:
+      summary: Retrieve a reading list
+      parameters:
+        - name: listId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { $ref: '#/components/responses/Record' }
+  /recentchanges.json:
+    get:
+      summary: Recent changes feed
+      responses:
+        '200': { $ref: '#/components/responses/Record' }
+components:
+  responses:
+    SearchResults:
+      description: Paginated search results.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              start: { type: integer }
+              num_found: { type: integer }
+              docs:
+                type: array
+                items:
+                  type: object
+                  additionalProperties: true
+    Record:
+      description: Open Library JSON record.
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
