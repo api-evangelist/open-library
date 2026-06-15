@@ -1,0 +1,196 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Library API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search books and works",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/search.json",
+        "params": [
+          {
+            "name": "q",
+            "value": "",
+            "type": "query",
+            "description": "Solr query string."
+          },
+          {
+            "name": "fields",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "sort",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "lang",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "page",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "limit",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "offset",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Solr-backed search across the Open Library catalog."
+    },
+    {
+      "info": {
+        "name": "Search authors",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/search/authors.json",
+        "params": [
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Search authors"
+    },
+    {
+      "info": {
+        "name": "Full-text search inside books",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/search/inside",
+        "params": [
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Full-text search inside books"
+    },
+    {
+      "info": {
+        "name": "Get a work",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/works/:workId.json",
+        "params": [
+          {
+            "name": "workId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a work"
+    },
+    {
+      "info": {
+        "name": "Get an edition",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/editions/:editionId.json",
+        "params": [
+          {
+            "name": "editionId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get an edition"
+    },
+    {
+      "info": {
+        "name": "Get an author",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/authors/:authorId.json",
+        "params": [
+          {
+            "name": "authorId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get an author"
+    },
+    {
+      "info": {
+        "name": "List works for a subject",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/subjects/:subject.json",
+        "params": [
+          {
+            "name": "subject",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List works for a subject"
+    },
+    {
+      "info": {
+        "name": "Retrieve a reading list",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/lists/:listId.json",
+        "params": [
+          {
+            "name": "listId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Retrieve a reading list"
+    },
+    {
+      "info": {
+        "name": "Recent changes feed",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://openlibrary.org/recentchanges.json"
+      },
+      "docs": "Recent changes feed"
+    }
+  ],
+  "bundled": true
+}
