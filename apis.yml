@@ -174,7 +174,7 @@ apis:
 common:
   - type: Website
     url: https://openlibrary.org/
-  - type: Developer Documentation
+  - type: Documentation
     url: https://openlibrary.org/developers/api
   - type: Bulk Data Dumps
     url: https://openlibrary.org/developers/dumps
