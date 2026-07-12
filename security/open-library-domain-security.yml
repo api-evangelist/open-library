@@ -1,0 +1,20 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: openlibrary.org
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 28 23:05:19 2026 GMT
+  hsts: false
+- host: covers.openlibrary.org
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 17 23:08:21 2026 GMT
+  hsts: false
+domains:
+- domain: openlibrary.org
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
