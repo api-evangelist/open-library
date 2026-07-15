@@ -172,6 +172,8 @@ apis:
       - type: Documentation
         url: https://openlibrary.org/dev/docs/api/read
 common:
+  - type: AgenticAccess
+    url: agentic-access/open-library-agentic-access.yml
   - type: DomainSecurity
     url: security/open-library-domain-security.yml
   - type: Website
