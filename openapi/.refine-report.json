@@ -1,0 +1,28 @@
+{
+  "provider": "open-library",
+  "sources": [
+    "open-library-authors-api-openapi.yml",
+    "open-library-editions-api-openapi.yml",
+    "open-library-lists-api-openapi.yml",
+    "open-library-recentchanges-json-api-openapi.yml",
+    "open-library-search-api-openapi.yml",
+    "open-library-search-json-api-openapi.yml",
+    "open-library-subjects-api-openapi.yml",
+    "open-library-works-api-openapi.yml"
+  ],
+  "outputs": [
+    "open-library-authors-api-openapi.yml",
+    "open-library-editions-api-openapi.yml",
+    "open-library-lists-api-openapi.yml",
+    "open-library-recentchanges-json-api-openapi.yml",
+    "open-library-search-api-openapi.yml",
+    "open-library-search-json-api-openapi.yml",
+    "open-library-subjects-api-openapi.yml",
+    "open-library-works-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
