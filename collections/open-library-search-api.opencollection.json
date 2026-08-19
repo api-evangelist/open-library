@@ -1,0 +1,54 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Library Authors Search API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search authors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openlibrary.org/search/authors.json",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Search authors"
+        },
+        {
+          "info": {
+            "name": "Full-text search inside books",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openlibrary.org/search/inside",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Full-text search inside books"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

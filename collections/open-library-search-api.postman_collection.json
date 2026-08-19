@@ -1,0 +1,192 @@
+{
+  "item": [
+    {
+      "id": "c8935402-f518-4840-bb27-242c5973fad3",
+      "name": "Search",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "38365b6a-1082-4fd0-aaf8-dfc799e1f89f",
+          "name": "Search authors",
+          "request": {
+            "name": "Search authors",
+            "description": {},
+            "url": {
+              "path": [
+                "search",
+                "authors.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "546ed968-1a5e-44c9-8225-68fd505132a6",
+              "name": "Paginated search results.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search",
+                    "authors.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"start\": 3001,\n  \"num_found\": 3843,\n  \"docs\": [\n    {\n      \"key_0\": \"string\"\n    },\n    {\n      \"key_0\": true\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c4b2d0f6-5352-4133-afd2-54f87e3d0408",
+          "name": "Full-text search inside books",
+          "request": {
+            "name": "Full-text search inside books",
+            "description": {},
+            "url": {
+              "path": [
+                "search",
+                "inside"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "39dacf05-f9f2-401e-83f9-010c1a2c3667",
+              "name": "Paginated search results.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search",
+                    "inside"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"start\": 3157,\n  \"num_found\": 9813,\n  \"docs\": [\n    {\n      \"key_0\": 6127\n    },\n    {\n      \"key_0\": 5672.705595785595,\n      \"key_1\": 6600\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://openlibrary.org",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "c8935984-1087-4b15-b04e-ab6a454f35bd",
+    "name": "Open Library Authors Search API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open Library's public, read-only REST API for searching books, authors,\nand works, retrieving structured records (works, editions, authors,\nsubjects), fetching cover images, and pulling recent changes. No\nauthentication is required; clients are expected to send a descriptive\n`User-Agent` header to receive a higher per-second rate limit.\n\n\nContact Support:\n Name: Open Library Developer Documentation",
+      "type": "text/plain"
+    }
+  }
+}

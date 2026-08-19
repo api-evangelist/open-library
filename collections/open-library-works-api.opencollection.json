@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Library Authors Works API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Works",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a work",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openlibrary.org/works/:workId.json",
+            "params": [
+              {
+                "name": "workId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a work"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,111 @@
+{
+  "item": [
+    {
+      "id": "7fc2acfb-d02a-45cb-b984-1d4c0fa78346",
+      "name": "Authors",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3c351692-1d0e-48e3-8798-01dabc76d424",
+          "name": "Get an author",
+          "request": {
+            "name": "Get an author",
+            "description": {},
+            "url": {
+              "path": [
+                "authors",
+                "{{authorId}}.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f4cc6906-6778-4efb-a650-0b6202c4614e",
+              "name": "Open Library JSON record.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authors",
+                    "{{authorId}}.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 2969.406799171149\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://openlibrary.org",
+      "key": "baseUrl"
+    },
+    {
+      "disabled": false,
+      "description": {
+        "content": "(Required) ",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "<string>",
+      "key": "authorId"
+    }
+  ],
+  "info": {
+    "_postman_id": "50a2cfa3-3416-4322-bbe6-82781f11bf6a",
+    "name": "Open Library Authors API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open Library's public, read-only REST API for searching books, authors,\nand works, retrieving structured records (works, editions, authors,\nsubjects), fetching cover images, and pulling recent changes. No\nauthentication is required; clients are expected to send a descriptive\n`User-Agent` header to receive a higher per-second rate limit.\n\n\nContact Support:\n Name: Open Library Developer Documentation",
+      "type": "text/plain"
+    }
+  }
+}

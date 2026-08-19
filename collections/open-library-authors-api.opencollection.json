@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Library Authors API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Authors",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get an author",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openlibrary.org/authors/:authorId.json",
+            "params": [
+              {
+                "name": "authorId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get an author"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

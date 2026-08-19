@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Library Authors Editions API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Editions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get an edition",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openlibrary.org/editions/:editionId.json",
+            "params": [
+              {
+                "name": "editionId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get an edition"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

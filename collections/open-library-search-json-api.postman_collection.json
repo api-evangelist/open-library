@@ -1,0 +1,168 @@
+{
+  "item": [
+    {
+      "id": "360677cc-77d1-4777-9b19-e59e9a4d7d50",
+      "name": "Search.json",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "687236e7-0902-48e6-9e89-b497a1584a16",
+          "name": "Search books and works",
+          "request": {
+            "name": "Search books and works",
+            "description": {
+              "content": "Solr-backed search across the Open Library catalog.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "search.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "Solr query string."
+                },
+                {
+                  "disabled": false,
+                  "key": "fields",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "sort",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "lang",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9a923e5a-95f0-4fad-8ba8-6b76ba054f94",
+              "name": "Paginated search results.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "lang",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"start\": 2929,\n  \"num_found\": 6989,\n  \"docs\": [\n    {\n      \"key_0\": 4325.924939747564,\n      \"key_1\": 7564,\n      \"key_2\": true,\n      \"key_3\": false\n    },\n    {\n      \"key_0\": 1407\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://openlibrary.org",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "2cb5998f-760f-49aa-80ff-dfb0108c108d",
+    "name": "Open Library Authors Search.json API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open Library's public, read-only REST API for searching books, authors,\nand works, retrieving structured records (works, editions, authors,\nsubjects), fetching cover images, and pulling recent changes. No\nauthentication is required; clients are expected to send a descriptive\n`User-Agent` header to receive a higher per-second rate limit.\n\n\nContact Support:\n Name: Open Library Developer Documentation",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Open Library Authors Subjects API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Subjects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List works for a subject",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openlibrary.org/subjects/:subject.json",
+            "params": [
+              {
+                "name": "subject",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List works for a subject"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

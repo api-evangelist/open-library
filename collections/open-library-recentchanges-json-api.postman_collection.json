@@ -1,0 +1,99 @@
+{
+  "item": [
+    {
+      "id": "598192e0-0488-4df5-810a-da706ade1ee0",
+      "name": "Recentchanges.json",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e829ea1b-b2c6-462a-994d-54f0a5fd5551",
+          "name": "Recent changes feed",
+          "request": {
+            "name": "Recent changes feed",
+            "description": {},
+            "url": {
+              "path": [
+                "recentchanges.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e0c6a030-652a-4cb1-9cff-9e86b22a8ace",
+              "name": "Open Library JSON record.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "recentchanges.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": false,\n  \"key_1\": false,\n  \"key_2\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://openlibrary.org",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "173b04ca-e11e-400f-8fe5-3bdf91696f1d",
+    "name": "Open Library Authors Recentchanges.json API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Open Library's public, read-only REST API for searching books, authors,\nand works, retrieving structured records (works, editions, authors,\nsubjects), fetching cover images, and pulling recent changes. No\nauthentication is required; clients are expected to send a descriptive\n`User-Agent` header to receive a higher per-second rate limit.\n\n\nContact Support:\n Name: Open Library Developer Documentation",
+      "type": "text/plain"
+    }
+  }
+}
