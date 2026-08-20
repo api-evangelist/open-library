@@ -30,6 +30,16 @@ tags:
   - Covers
   - Libraries
   - Open Data
+  - Reading lists
+  - Search
+  - Subjects
+tags_raw:
+  - Authors
+  - Books
+  - Catalog
+  - Covers
+  - Libraries
+  - Open Data
   - Reading Lists
   - Search
   - Subjects
@@ -124,6 +134,10 @@ apis:
   humanURL: https://openlibrary.org/dev/docs/api/covers
   tags:
   - Covers
+  - Image
+  - Media
+  tags_raw:
+  - Covers
   - Images
   - Media
   properties:
@@ -136,6 +150,10 @@ apis:
     works, editions, and subjects.
   humanURL: https://openlibrary.org/dev/docs/api/lists
   tags:
+  - List
+  - Reading lists
+  - User Data
+  tags_raw:
   - Lists
   - Reading Lists
   - User Data
@@ -203,6 +221,8 @@ apis:
   description: The Lists API from Open Library — 1 operation(s) for lists.
   humanURL: https://openlibrary.org/dev/docs/api/search
   tags:
+  - List
+  tags_raw:
   - Lists
   properties:
   - type: OpenAPI
