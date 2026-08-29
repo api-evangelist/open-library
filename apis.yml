@@ -285,6 +285,9 @@ apis:
   - type: OpenAPI
     url: openapi/open-library-works-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/open-library-capability-edges.yml
+    name: Open Library Business Capability Map
   - type: AgenticAccess
     url: agentic-access/open-library-agentic-access.yml
   - type: DomainSecurity
