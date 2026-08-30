@@ -42,7 +42,7 @@ tags:
   - Covers
   - Libraries
   - Open Data
-  - Reading lists
+  - Reading Lists
   - Search
   - Subjects
 tags_raw:
@@ -163,7 +163,7 @@ apis:
   humanURL: https://openlibrary.org/dev/docs/api/lists
   tags:
   - List
-  - Reading lists
+  - Reading Lists
   - User Data
   tags_raw:
   - Lists
