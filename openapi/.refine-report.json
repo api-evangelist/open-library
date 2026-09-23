@@ -1,14 +1,7 @@
 {
   "provider": "open-library",
   "sources": [
-    "open-library-authors-api-openapi.yml",
-    "open-library-editions-api-openapi.yml",
-    "open-library-lists-api-openapi.yml",
-    "open-library-recentchanges-json-api-openapi.yml",
-    "open-library-search-api-openapi.yml",
-    "open-library-search-json-api-openapi.yml",
-    "open-library-subjects-api-openapi.yml",
-    "open-library-works-api-openapi.yml"
+    "_original/open-library-openapi.yml"
   ],
   "outputs": [
     "open-library-authors-api-openapi.yml",
@@ -23,6 +16,36 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "open-library-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "open-library-openapi.yml: tagged paths GET /search.json -> Search.json",
+    "open-library-openapi.yml: tagged paths GET /search/authors.json -> Search",
+    "open-library-openapi.yml: tagged paths GET /search/inside -> Search",
+    "open-library-openapi.yml: tagged paths GET /works/{workId}.json -> Works",
+    "open-library-openapi.yml: tagged paths GET /editions/{editionId}.json -> Editions",
+    "open-library-openapi.yml: tagged paths GET /authors/{authorId}.json -> Authors",
+    "open-library-openapi.yml: tagged paths GET /subjects/{subject}.json -> Subjects",
+    "open-library-openapi.yml: tagged paths GET /lists/{listId}.json -> Lists",
+    "open-library-openapi.yml: tagged paths GET /recentchanges.json -> Recentchanges.json",
+    "open-library-openapi.yml: declared missing tag: Authors",
+    "open-library-openapi.yml: declared missing tag: Editions",
+    "open-library-openapi.yml: declared missing tag: Lists",
+    "open-library-openapi.yml: declared missing tag: Recentchanges.json",
+    "open-library-openapi.yml: declared missing tag: Search",
+    "open-library-openapi.yml: declared missing tag: Search.json",
+    "open-library-openapi.yml: declared missing tag: Subjects",
+    "open-library-openapi.yml: declared missing tag: Works",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "open-library-authors-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-editions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-lists-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-recentchanges-json-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-search-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-search-json-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-subjects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "open-library-works-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

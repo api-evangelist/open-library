@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Open Library Authors Recentchanges.json API
+  title: Open Library Recentchanges.json API
   description: 'Open Library''s public, read-only REST API for searching books, authors,
 
     and works, retrieving structured records (works, editions, authors,
@@ -9,9 +9,7 @@ info:
 
     authentication is required; clients are expected to send a descriptive
 
-    `User-Agent` header to receive a higher per-second rate limit.
-
-    '
+    `User-Agent` header to receive a higher per-second rate limit.'
   version: 1.0.0
   contact:
     name: Open Library Developer Documentation
@@ -32,6 +30,8 @@ paths:
           $ref: '#/components/responses/Record'
       tags:
       - Recentchanges.json
+      operationId: getRecentchangesJson
+      x-operation-id-source: derived
 components:
   responses:
     Record:
