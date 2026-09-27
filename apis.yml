@@ -40,7 +40,7 @@ tags:
   - Books
   - Catalog
   - Covers
-  - Libraries
+  - Library
   - Open Data
   - Reading Lists
   - Search
@@ -61,19 +61,6 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/open-library/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 apis:
-- aid: open-library:open-library-search-api
-  name: Open Library Search API
-  description: >-
-    Search Open Library's catalog of books, authors, lists, and subjects. Returns JSON results for full-text
-    and faceted queries, with options for pagination, field selection, and language filtering.
-  humanURL: https://openlibrary.org/dev/docs/api/search
-  tags:
-  - Books
-  - Catalog
-  - Search
-  properties:
-  - type: Documentation
-    url: https://openlibrary.org/dev/docs/api/search
 - aid: open-library:open-library-search-inside-api
   name: Open Library Search Inside API
   description: >-
@@ -87,57 +74,6 @@ apis:
   properties:
   - type: Documentation
     url: https://openlibrary.org/dev/docs/api/search_inside
-- aid: open-library:open-library-works-api
-  name: Open Library Works API
-  description: >-
-    Retrieve work-level records (the abstract concept of a book independent of edition) by Open Library
-    Work ID. Returns JSON, YAML, or RDF/XML.
-  humanURL: https://openlibrary.org/dev/docs/api/books
-  tags:
-  - Books
-  - Catalog
-  - Works
-  properties:
-  - type: Documentation
-    url: https://openlibrary.org/dev/docs/api/books
-- aid: open-library:open-library-editions-api
-  name: Open Library Editions API
-  description: >-
-    Retrieve edition-level records (specific printings, ISBNs, formats) by Open Library Edition ID, ISBN-10,
-    ISBN-13, OCLC, or LCCN.
-  humanURL: https://openlibrary.org/dev/docs/api/books
-  tags:
-  - Books
-  - Catalog
-  - Editions
-  - ISBN
-  properties:
-  - type: Documentation
-    url: https://openlibrary.org/dev/docs/api/books
-- aid: open-library:open-library-authors-api
-  name: Open Library Authors API
-  description: >-
-    Fetch author records and their works by Open Library Author ID. Supports JSON, YAML, and RDF/XML representations.
-  humanURL: https://openlibrary.org/dev/docs/api/authors
-  tags:
-  - Authors
-  - Catalog
-  properties:
-  - type: Documentation
-    url: https://openlibrary.org/dev/docs/api/authors
-- aid: open-library:open-library-subjects-api
-  name: Open Library Subjects API
-  description: >-
-    Retrieve books, works, and metadata grouped by subject (genre, topic, place, time, person) with paging
-    and faceting.
-  humanURL: https://openlibrary.org/dev/docs/api/subjects
-  tags:
-  - Catalog
-  - Subjects
-  - Taxonomy
-  properties:
-  - type: Documentation
-    url: https://openlibrary.org/dev/docs/api/subjects
 - aid: open-library:open-library-covers-api
   name: Open Library Covers API
   description: >-
@@ -155,23 +91,6 @@ apis:
   properties:
   - type: Documentation
     url: https://openlibrary.org/dev/docs/api/covers
-- aid: open-library:open-library-lists-api
-  name: Open Library Lists API
-  description: >-
-    Read and manage user-curated reading lists. Authenticated patrons can create lists and add or remove
-    works, editions, and subjects.
-  humanURL: https://openlibrary.org/dev/docs/api/lists
-  tags:
-  - List
-  - Reading Lists
-  - User Data
-  tags_raw:
-  - Lists
-  - Reading Lists
-  - User Data
-  properties:
-  - type: Documentation
-    url: https://openlibrary.org/dev/docs/api/lists
 - aid: open-library:open-library-mybooks-api
   name: Open Library My Books API
   description: >-
@@ -205,6 +124,10 @@ apis:
   humanURL: https://openlibrary.org/dev/docs/api/read
   tags:
   - Availability
+  - Library
+  - Lookup
+  tags_raw:
+  - Availability
   - Libraries
   - Lookup
   properties:
@@ -212,33 +135,50 @@ apis:
     url: https://openlibrary.org/dev/docs/api/read
 - aid: open-library:open-library-authors-api
   name: Open Library Authors API
-  description: The Authors API from Open Library — 1 operation(s) for authors.
-  humanURL: https://openlibrary.org/dev/docs/api/search
+  description: Fetch author records and their works by Open Library Author ID. Supports JSON, YAML, and
+    RDF/XML representations.
+  humanURL: https://openlibrary.org/dev/docs/api/authors
   tags:
   - Authors
+  - Catalog
   properties:
   - type: OpenAPI
     url: openapi/open-library-authors-api-openapi.yml
+  - type: Documentation
+    url: https://openlibrary.org/dev/docs/api/authors
 - aid: open-library:open-library-editions-api
   name: Open Library Editions API
-  description: The Editions API from Open Library — 1 operation(s) for editions.
-  humanURL: https://openlibrary.org/dev/docs/api/search
+  description: Retrieve edition-level records (specific printings, ISBNs, formats) by Open Library Edition
+    ID, ISBN-10, ISBN-13, OCLC, or LCCN.
+  humanURL: https://openlibrary.org/dev/docs/api/books
   tags:
   - Editions
+  - Books
+  - Catalog
+  - ISBN
   properties:
   - type: OpenAPI
     url: openapi/open-library-editions-api-openapi.yml
+  - type: Documentation
+    url: https://openlibrary.org/dev/docs/api/books
 - aid: open-library:open-library-lists-api
   name: Open Library Lists API
-  description: The Lists API from Open Library — 1 operation(s) for lists.
-  humanURL: https://openlibrary.org/dev/docs/api/search
+  description: Read and manage user-curated reading lists. Authenticated patrons can create lists and add
+    or remove works, editions, and subjects.
+  humanURL: https://openlibrary.org/dev/docs/api/lists
   tags:
   - List
+  - Reading Lists
+  - User Data
   tags_raw:
   - Lists
+  - Reading Lists
+  - User Data
   properties:
   - type: OpenAPI
     url: openapi/open-library-lists-api-openapi.yml
+  - type: Documentation
+    url: https://openlibrary.org/dev/docs/api/lists
 - aid: open-library:open-library-recentchanges-json-api
   name: Open Library Recentchanges.json API
   description: The Recentchanges.json API from Open Library — 1 operation(s) for recentchanges.json.
@@ -250,13 +190,18 @@ apis:
     url: openapi/open-library-recentchanges-json-api-openapi.yml
 - aid: open-library:open-library-search-api
   name: Open Library Search API
-  description: The Search API from Open Library — 2 operation(s) for search.
+  description: Search Open Library's catalog of books, authors, lists, and subjects. Returns JSON results
+    for full-text and faceted queries, with options for pagination, field selection, and language filtering.
   humanURL: https://openlibrary.org/dev/docs/api/search
   tags:
   - Search
+  - Books
+  - Catalog
   properties:
   - type: OpenAPI
     url: openapi/open-library-search-api-openapi.yml
+  - type: Documentation
+    url: https://openlibrary.org/dev/docs/api/search
 - aid: open-library:open-library-search-json-api
   name: Open Library Search.json API
   description: The Search.json API from Open Library — 1 operation(s) for search.json.
@@ -268,22 +213,32 @@ apis:
     url: openapi/open-library-search-json-api-openapi.yml
 - aid: open-library:open-library-subjects-api
   name: Open Library Subjects API
-  description: The Subjects API from Open Library — 1 operation(s) for subjects.
-  humanURL: https://openlibrary.org/dev/docs/api/search
+  description: Retrieve books, works, and metadata grouped by subject (genre, topic, place, time, person)
+    with paging and faceting.
+  humanURL: https://openlibrary.org/dev/docs/api/subjects
   tags:
   - Subjects
+  - Catalog
+  - Taxonomy
   properties:
   - type: OpenAPI
     url: openapi/open-library-subjects-api-openapi.yml
+  - type: Documentation
+    url: https://openlibrary.org/dev/docs/api/subjects
 - aid: open-library:open-library-works-api
   name: Open Library Works API
-  description: The Works API from Open Library — 1 operation(s) for works.
-  humanURL: https://openlibrary.org/dev/docs/api/search
+  description: Retrieve work-level records (the abstract concept of a book independent of edition) by Open
+    Library Work ID. Returns JSON, YAML, or RDF/XML.
+  humanURL: https://openlibrary.org/dev/docs/api/books
   tags:
   - Works
+  - Books
+  - Catalog
   properties:
   - type: OpenAPI
     url: openapi/open-library-works-api-openapi.yml
+  - type: Documentation
+    url: https://openlibrary.org/dev/docs/api/books
 common:
   - type: CapabilityMap
     url: capabilities/open-library-capability-edges.yml
