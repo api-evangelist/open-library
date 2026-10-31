@@ -1,4 +1,4 @@
-# Open Library (open-library)
+# Open Library
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,241 +66,135 @@
 
 Open Library offers a suite of APIs to help developers get up and running with its data. This includes RESTful APIs that make Open Library data available in JSON, YAML, and RDF/XML formats, plus a Search Inside full-text search service, cover image endpoints, and read-protocol library lookup APIs. Most resources also expose machine-readable representations by appending .json, .yml, or .rdf to any Open Library URL.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/open-library/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/open-library/refs/heads/main/apis.yml)
+**Areas:** Authors · Books · Catalog · Covers · Library · Open Data · Reading Lists · Search · Subjects
 
-## Scope
+## Open Library on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Open Library is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/open-library/](https://apis.io/providers/open-library/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (13)
 
-- Authors
-- Books
-- Catalog
-- Covers
-- Libraries
-- Open Data
-- Reading Lists
-- Search
-- Subjects
+- [Open Library Search Inside API](https://apis.io/apis/open-library/open-library-search-inside-api/) — Full-text search across the millions of digitized books in the Internet Archive's collection, returning matching passages and book identifiers.
+- [Open Library Covers API](https://apis.io/apis/open-library/open-library-covers-api/) — Retrieve book and author cover images by Open Library ID, ISBN, OCLC, LCCN, or Goodreads ID, in small, medium, and large sizes.
+- [Open Library My Books API](https://apis.io/apis/open-library/open-library-mybooks-api/) — Access a patron's public reading log: Want to Read, Currently Reading, and Already Read shelves for a given Open Library account.
+- [Open Library Recent Changes API](https://apis.io/apis/open-library/open-library-recent-changes-api/) — Stream recent edits across the Open Library catalog including works, editions, authors, lists, and subjects, with filtering by kind and time range.
+- [Open Library Read API](https://apis.io/apis/open-library/open-library-read-api/) — Legacy partner API that returns availability and read URLs for books matched by ISBN, OCLC, LCCN, or OLID identifiers across libraries and the Internet Archive.
+- [Open Library Authors API](https://apis.io/apis/open-library/open-library-authors-api/) — Fetch author records and their works by Open Library Author ID. Supports JSON, YAML, and RDF/XML representations.
+- [Open Library Editions API](https://apis.io/apis/open-library/open-library-editions-api/) — Retrieve edition-level records (specific printings, ISBNs, formats) by Open Library Edition ID, ISBN-10, ISBN-13, OCLC, or LCCN.
+- [Open Library Lists API](https://apis.io/apis/open-library/open-library-lists-api/) — Read and manage user-curated reading lists. Authenticated patrons can create lists and add or remove works, editions, and subjects.
+- [Open Library Recentchanges.json API](https://apis.io/apis/open-library/open-library-recentchanges-json-api/) — The Recentchanges.json API from Open Library — 1 operation(s) for recentchanges.json.
+- [Open Library Search API](https://apis.io/apis/open-library/open-library-search-api/) — Search Open Library's catalog of books, authors, lists, and subjects. Returns JSON results for full-text and faceted queries, with options for pagination,…
+- [Open Library Search.json API](https://apis.io/apis/open-library/open-library-search-json-api/) — The Search.json API from Open Library — 1 operation(s) for search.json.
+- [Open Library Subjects API](https://apis.io/apis/open-library/open-library-subjects-api/) — Retrieve books, works, and metadata grouped by subject (genre, topic, place, time, person) with paging and faceting.
+- [Open Library Works API](https://apis.io/apis/open-library/open-library-works-api/) — Retrieve work-level records (the abstract concept of a book independent of edition) by Open Library Work ID. Returns JSON, YAML, or RDF/XML.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-02-06
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Open Library Search API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Search Open Library's catalog of books, authors, lists, and subjects. Returns JSON results for full-text and faceted queries, with options for pagination, field selection, and language filtering.
+- [Open Library Agentic Access](https://apis.io/agentic-access/open-library/open-library-agentic-access/)
 
-- **Human URL:** [https://openlibrary.org/dev/docs/api/search](https://openlibrary.org/dev/docs/api/search)
+#### Collections (9)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Books
-- Catalog
-- Search
+- [Open Library API](https://apis.io/collections/open-library/open-open-library/)
+- [Open Library Authors API](https://apis.io/collections/open-library/open-open-library-authors-api/)
+- [Open Library Authors Editions API](https://apis.io/collections/open-library/open-open-library-editions-api/)
+- [Open Library Authors Lists API](https://apis.io/collections/open-library/open-open-library-lists-api/)
+- [Open Library Authors Recentchanges.json API](https://apis.io/collections/open-library/open-open-library-recentchanges-json-api/)
+- [Open Library Authors Search API](https://apis.io/collections/open-library/open-open-library-search-api/)
+- [Open Library Authors Search.json API](https://apis.io/collections/open-library/open-open-library-search-json-api/)
+- [Open Library Authors Subjects API](https://apis.io/collections/open-library/open-open-library-subjects-api/)
+- [Open Library Authors Works API](https://apis.io/collections/open-library/open-open-library-works-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://openlibrary.org/dev/docs/api/search)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Open Library Search Inside API
+- [Open Library Domain Security](https://apis.io/security/open-library/open-library-domain-security/)
 
-Full-text search across the millions of digitized books in the Internet Archive's collection, returning matching passages and book identifiers.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://openlibrary.org/dev/docs/api/search_inside](https://openlibrary.org/dev/docs/api/search_inside)
+Published plans, tiers and prices.
 
-#### Tags
+- [Open Library Plans Pricing](https://apis.io/plans/open-library/open-library-plans-pricing/)
 
-- Books
-- Full Text
-- Search
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://openlibrary.org/dev/docs/api/search_inside)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Open Library Rate Limits](https://apis.io/rate-limits/open-library/open-library-rate-limits/)
 
-### Open Library Works API
+#### FinOps (1)
 
-Retrieve work-level records (the abstract concept of a book independent of edition) by Open Library Work ID. Returns JSON, YAML, or RDF/XML.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://openlibrary.org/dev/docs/api/books](https://openlibrary.org/dev/docs/api/books)
+- [Open Library Finops](https://apis.io/finops/open-library/open-library-finops/)
 
-#### Tags
+## Where to find this API
 
-- Books
-- Catalog
-- Works
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/books)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Editions API
-
-Retrieve edition-level records (specific printings, ISBNs, formats) by Open Library Edition ID, ISBN-10, ISBN-13, OCLC, or LCCN.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/books](https://openlibrary.org/dev/docs/api/books)
-
-#### Tags
-
-- Books
-- Catalog
-- Editions
-- ISBN
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/books)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Authors API
-
-Fetch author records and their works by Open Library Author ID. Supports JSON, YAML, and RDF/XML representations.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/authors](https://openlibrary.org/dev/docs/api/authors)
-
-#### Tags
-
-- Authors
-- Catalog
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/authors)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Subjects API
-
-Retrieve books, works, and metadata grouped by subject (genre, topic, place, time, person) with paging and faceting.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/subjects](https://openlibrary.org/dev/docs/api/subjects)
-
-#### Tags
-
-- Catalog
-- Subjects
-- Taxonomy
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/subjects)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Covers API
-
-Retrieve book and author cover images by Open Library ID, ISBN, OCLC, LCCN, or Goodreads ID, in small, medium, and large sizes.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/covers](https://openlibrary.org/dev/docs/api/covers)
-
-#### Tags
-
-- Covers
-- Images
-- Media
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/covers)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Lists API
-
-Read and manage user-curated reading lists. Authenticated patrons can create lists and add or remove works, editions, and subjects.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/lists](https://openlibrary.org/dev/docs/api/lists)
-
-#### Tags
-
-- Lists
-- Reading Lists
-- User Data
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/lists)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library My Books API
-
-Access a patron's public reading log: Want to Read, Currently Reading, and Already Read shelves for a given Open Library account.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/mybooks](https://openlibrary.org/dev/docs/api/mybooks)
-
-#### Tags
-
-- Reading Log
-- User Data
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/mybooks)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Recent Changes API
-
-Stream recent edits across the Open Library catalog including works, editions, authors, lists, and subjects, with filtering by kind and time range.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/recentchanges](https://openlibrary.org/dev/docs/api/recentchanges)
-
-#### Tags
-
-- Activity
-- Changes
-- Feed
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/recentchanges)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Open Library Read API
-
-Legacy partner API that returns availability and read URLs for books matched by ISBN, OCLC, LCCN, or OLID identifiers across libraries and the Internet Archive.
-
-- **Human URL:** [https://openlibrary.org/dev/docs/api/read](https://openlibrary.org/dev/docs/api/read)
-
-#### Tags
-
-- Availability
-- Libraries
-- Lookup
-
-#### Properties
-
-- [Documentation](https://openlibrary.org/dev/docs/api/read)
-- [Postman Collection](collections/open-library.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/open-library.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://openlibrary.org/)
-- [Developer  Documentation](https://openlibrary.org/developers/api)
-- [Bulk  Data  Dumps](https://openlibrary.org/developers/dumps)
-- [GitHub Organization](https://github.com/internetarchive/openlibrary)
-- [Issues](https://github.com/internetarchive/openlibrary/issues)
+- [Documentation](https://openlibrary.org/developers/api)
 - [Blog](https://blog.openlibrary.org/)
-- [Terms of Service](https://archive.org/about/terms.php)
+- [Terms of service](https://archive.org/about/terms.php)
+- [GitHub](https://github.com/internetarchive/openlibrary)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 22.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 41.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/open-library/](https://apis.io/providers/open-library/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Open Library: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/open-library/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
